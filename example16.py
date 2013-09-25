@@ -1,3 +1,5 @@
+from random import randint
+
 def cheese_and_crackers(cheese_count, boxes_of_crackers):
     print "You have %d cheeses!" % cheese_count
     print "You have %d boxes of crackers!" % boxes_of_crackers
@@ -29,3 +31,13 @@ cheese_and_crackers(10 + 20, 5 + 6)
 #Same thing as earlier, 10 + 100 and 50 + 1000
 print "And we can combine the two, variables and math:"
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+coined = randint(2,8)
+
+def function_ex(coins):
+	print "Have you counted all your coins?!"
+	print "So far you've got %s coins!" % coins
+	print "Are you happy with that?"
+	yesno = raw_input("Are you? ")	
+	
+function_ex(coined)
