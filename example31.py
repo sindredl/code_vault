@@ -6,3 +6,4 @@ Forkortelser = {
 print Forkortelser
 
 print "Slemmestad blir ogsaa forkortet til :", Forkortelser['Slemmestad']
+	
