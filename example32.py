@@ -20,6 +20,7 @@ song_a_dilly_doo = Song(["I am so bored, so so bored",
 
 song1 = "This is a great great song, a variable song"
 
+print Song(song1)
 		
 happy_bday.sing_it()
 
