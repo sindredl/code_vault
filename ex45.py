@@ -39,7 +39,6 @@ print "You are dazed and confused as you wake up in a pitch black room. What do 
 def first_choice():
 	print ("#SEARCH, #JUMP, #GIVE UP")
 	
-
 	
 first_choice()
 choice = raw_input("> ")
@@ -57,3 +56,9 @@ elif choice == "give up":
 else:
 	print "You didn't pick an option and is left with no options as nothing happens."
 
+
+if passage == "one":
+	print "It's a dead end, what do you do?"
+	print "#SEARCH, #RETURN"
+elif passage == "two":
+	print 
