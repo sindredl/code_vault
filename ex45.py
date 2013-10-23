@@ -4,7 +4,7 @@ use one class per room"""
 # print You wake up in a room, it's pitch black what do you do?
 # Present options - Search - Jump - Give up.
 
-# If search, you find a switch, the whole room lights up as you seemingly find the light switch. You are in a room underground with three avaibable passages.
+# If search, you find a switch, the whole room lights up as you seemingly find the light switch. You are in a room underground with three available passages.
 # Pick number one, two or three?
 
 #If Jump, you jump but nothing happens what did you expect?
@@ -34,31 +34,36 @@ use one class per room"""
 # NO KEY, Hit door or turn back. If you hit door, you feel the whole cave shaking before it crumbles ontop of you.
 
 
-print "You are dazed and confused as you wake up in a pitch black room. What do you do next?"
+class room_start(object):
+	def first_choice(self):
+		print ("#SEARCH, #JUMP, #GIVE UP")	
+		choice = raw_input("> ")
+		if choice == "search":
+			print "\nYou find a switch, the whole room lights up."
+		elif choice == "jump":
+			print "You jump, but nothing happens what did you expect?"
+			first_choice()
+		elif choice == "give up":
+			print "You give up, as darkness engulfs you."
+		else:
+			print "You didn't pick an option and is left with no options as nothing happens."
 
-def first_choice():
-	print ("#SEARCH, #JUMP, #GIVE UP")
-	
-	
-first_choice()
-choice = raw_input("> ")
+class passage_room(object):
+	def the_passages(self):
+		print "You are in a room underground with three available passages."
+		print "Which passage do you decide to go down?"
+		print "#ONE, #TWO, #THREE"
+		passage = raw_input("> ")
+			
+class passage_one(object):
 
-if choice == "search":
-	print "\n You find a switch, the whole room lights up as you seemingly find the light switch. You are in a room underground with three available passages."
-	print "Which passage do you decide to go down?"
-	print "#ONE, #TWO, #THREE"
-elif choice == "jump":
-	 print "You jump, but nothing happens what did you expect?"
-	 first_choice()
-	 choice = raw_input("> ")
-elif choice == "give up":
-	print "You give up, as darkness engulfs you."
-else:
-	print "You didn't pick an option and is left with no options as nothing happens."
-
-
-if passage == "one":
-	print "It's a dead end, what do you do?"
-	print "#SEARCH, #RETURN"
-elif passage == "two":
-	print 
+	def start(self):		
+		print "You walk down the passage and discover it's a dead end."
+		print "What would you like to do?"
+		print "#SEARCH or #RETURN?"
+		choice = raw_input("> ")
+		if choice == "search":
+			print "You take one step forward as you feel you step on something."
+			print "A pressure plate was activated and you fall down into a bottomless pit."
+		elif choice == "return":
+			passage_room.the_passages()
