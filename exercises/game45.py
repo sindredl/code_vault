@@ -75,11 +75,8 @@ class Player(Adventurer):
 				print "%s head was chopped straight off!" % self.foe.name
 				self.foe = None
 				self.state = "regular"
-				if randint(0, self.health) < 10:
-					self.health = self.health + 1
-					self.health_max = self.health_max + 1
-					print "%s grows stronger!" % self.name
-				else: self.foe_attacks()
+				
+			else: self.foe_attacks()
 	
 	def foe_attacks(self):
 		if self.foe.damage(self): print "%s was easily slain by %s! :-(\n Just terrible" % (self.name, self.foe.name)
