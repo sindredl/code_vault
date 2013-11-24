@@ -1,0 +1,28 @@
+Exercise 22 - What's been learned?
+________________________________________________________________________________________________________________________________________
+                                                                                                                                        ||
+Code		    || 		Name              ||            		Description																||
+                ||                        || 																							||	
+print           ||      print			  ||				    Prints a text/string.													||
+#               ||      Hashtag/Pound     ||                 	When entered text becomes a single line comment. 						||
+"""             ||      Quotation marks   ||                 	Comment over multiple lines.											||	
+def             ||      Function 		  ||					Defines a function is defined followed by name and parentheses.			||
+return          ||      Return            ||                 	Returns a given value.													||
+import          ||      Import            ||					Imports and adds features to the file.									||
+argv            ||      Argument variable ||                 	Holds arguments passed to the script.									||
+raw_input       ||      Input			  ||					Indicates input from user to file. 										||
+x = ex          ||      Variable		  ||					Holds a value.															||
+.read()         ||      Read              ||                    Tells the script to read a file.										||			
+.write()        ||      Write			  ||                    Indicates to write to a file.											||	
+.open()      	||      Open			  ||                    Opens a file.															||
+.truncate()     ||	    Truncate		  ||
+.close()		||		Close			  ||					Closes a file when called.												||
+\t        	    ||      Tab               ||                    A tab is created in the text.											||
+\n              ||      Newline           ||                    A new line is created.													||	
+''              ||      Quote             ||                    Is used to define text.													||
+""              ||      Double-quote      ||                    Is used to define text.													||
++,-,/,*         ||      Operators         ||                    Is used for many basic functions.										||		
+<,>,<=,>=       ||      Operators         ||                    More operators. Used for example defining greater then.					||
+%s, %r, %d      ||      Formating Syntax  ||                    %s = string, %r = string, %d = decimal.									||
+%				||		Modulo            ||																							||
+________________________________________________________________________________________________________________________________________|| 
