@@ -34,6 +34,7 @@ class Engine(object):
 class Overview(object):
 
     room = {
+		'cave_entrance' : ex45_roomdesc.cave_entrance(),
         'room1': ex45_roomdesc.room1(),
         'room2': ex45_roomdesc.room2(),
         'room3': ex45_roomdesc.room3(),
@@ -54,6 +55,6 @@ class Overview(object):
 
 p = Player()
 p.name = raw_input("\nWhat's your name adventurer? ")
-ooverview = Overview ('room1')
+ooverview = Overview ('cave_entrance')
 v_game = Engine(ooverview)
 v_game.play()
